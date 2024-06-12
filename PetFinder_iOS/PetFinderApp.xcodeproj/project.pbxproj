@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D056AD02B0B42EE00BDD0F9 /* PetFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D056ACF2B0B42EE00BDD0F9 /* PetFinderApp.swift */; };
+		3D056AD22B0B42EE00BDD0F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D056AD12B0B42EE00BDD0F9 /* ContentView.swift */; };
+		3D056AD42B0B42EF00BDD0F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D056AD32B0B42EF00BDD0F9 /* Assets.xcassets */; };
+		3D056AD72B0B42EF00BDD0F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D056AD62B0B42EF00BDD0F9 /* Preview Assets.xcassets */; };
+		3D1120C82B171E2000C6F373 /* PetsLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1120C72B171E2000C6F373 /* PetsLocalService.swift */; };
+		3D1120CA2B171E7400C6F373 /* MockPetsLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1120C92B171E7400C6F373 /* MockPetsLocalService.swift */; };
+		3D1120CC2B171F9900C6F373 /* UserDefaultsPetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1120CB2B171F9900C6F373 /* UserDefaultsPetService.swift */; };
+		3D1120CE2B1726BE00C6F373 /* PetsFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1120CD2B1726BE00C6F373 /* PetsFavoriteView.swift */; };
+		3D1FBE6A2B0C8DD4007FE7C6 /* TokenRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FBE692B0C8DD4007FE7C6 /* TokenRemoteService.swift */; };
+		3D1FBE6C2B0C8E27007FE7C6 /* LiveTokenRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FBE6B2B0C8E27007FE7C6 /* LiveTokenRemoteService.swift */; };
+		3D1FBE6F2B0C9E7A007FE7C6 /* TokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FBE6E2B0C9E7A007FE7C6 /* TokenRepository.swift */; };
+		3D2BECA42B10ABE3003B1A0D /* OrganizationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2BECA32B10ABE3003B1A0D /* OrganizationsViewModel.swift */; };
+		3D2BECA82B10AC1F003B1A0D /* OrganizationsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2BECA72B10AC1F003B1A0D /* OrganizationsRemoteService.swift */; };
+		3D2BECAA2B10AC3D003B1A0D /* LiveOrganizationsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2BECA92B10AC3D003B1A0D /* LiveOrganizationsRemoteService.swift */; };
+		3D2BECAC2B10AC60003B1A0D /* MockOrganizationsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2BECAB2B10AC60003B1A0D /* MockOrganizationsRemoteService.swift */; };
+		3D2BECAE2B10AC7D003B1A0D /* OrganizationsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2BECAD2B10AC7D003B1A0D /* OrganizationsRepository.swift */; };
+		3D2BECB02B10B153003B1A0D /* OrganizationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2BECAF2B10B153003B1A0D /* OrganizationsView.swift */; };
+		3D2BECB22B10B2EA003B1A0D /* OrganizationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2BECB12B10B2EA003B1A0D /* OrganizationDetailView.swift */; };
+		3D7318042B0B459100A91ACC /* URLSessionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7318032B0B459100A91ACC /* URLSessionNetworkClient.swift */; };
+		3D7318062B0B459E00A91ACC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7318052B0B459E00A91ACC /* NetworkError.swift */; };
+		3D7318082B0B45B400A91ACC /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7318072B0B45B400A91ACC /* NetworkClient.swift */; };
+		3D73180B2B0B468900A91ACC /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73180A2B0B468900A91ACC /* Pet.swift */; };
+		3D73180F2B0B4B9200A91ACC /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73180E2B0B4B9200A91ACC /* Organization.swift */; };
+		3D7318112B0B4C5700A91ACC /* CommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7318102B0B4C5700A91ACC /* CommonClass.swift */; };
+		3D779A072B0B4F6700F6C4BB /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D779A062B0B4F6700F6C4BB /* NetworkConstants.swift */; };
+		3D779A0C2B0B50C000F6C4BB /* PetsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D779A0B2B0B50C000F6C4BB /* PetsRemoteService.swift */; };
+		3D779A0E2B0B538C00F6C4BB /* MockPetsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D779A0D2B0B538C00F6C4BB /* MockPetsRemoteService.swift */; };
+		3D968F1E2B0B6537004C7E6C /* LivePetsRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D968F1D2B0B6537004C7E6C /* LivePetsRemoteService.swift */; };
+		3D968F242B0B6672004C7E6C /* PetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D968F232B0B6672004C7E6C /* PetsViewModel.swift */; };
+		3D968F262B0B66B2004C7E6C /* PetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D968F252B0B66B2004C7E6C /* PetsRepository.swift */; };
+		3DA1BE272B478A1F00A11892 /* OrganizationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1BE262B478A1F00A11892 /* OrganizationRowView.swift */; };
+		3DA811022B30AB6000080A42 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA811012B30AB6000080A42 /* LottieView.swift */; };
+		3DC55A7A2B0DF67E00BAC437 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC55A792B0DF67E00BAC437 /* SplashScreenView.swift */; };
+		3DDEB0C02B3F7B0400E52DC4 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 3DDEB0BF2B3F7B0400E52DC4 /* SimpleToast */; };
+		3DE50B312B0CB1A5008CFF27 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE50B302B0CB1A5008CFF27 /* SplashScreenViewModel.swift */; };
+		3DE6D6B22B0B699600108275 /* PetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6D6B12B0B699600108275 /* PetsView.swift */; };
+		3DE6D6B42B0B6A4000108275 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6D6B32B0B6A4000108275 /* Coordinator.swift */; };
+		3DE6D6B62B0B6D9D00108275 /* PetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6D6B52B0B6D9D00108275 /* PetDetailView.swift */; };
+		3DE6D6BB2B0B7D6000108275 /* TokenLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6D6BA2B0B7D6000108275 /* TokenLocalService.swift */; };
+		3DE6D6BD2B0B7D8F00108275 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6D6BC2B0B7D8F00108275 /* Token.swift */; };
+		3DE6D6C02B0B7FC000108275 /* UserDefaultsTokenLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6D6BF2B0B7FC000108275 /* UserDefaultsTokenLocalService.swift */; };
+		3DE91B862B30C0AF00C47D81 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 3DE91B852B30C0AF00C47D81 /* Lottie */; };
+		3DE91B8C2B30CA4F00C47D81 /* animationPet.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DE91B8B2B30CA4F00C47D81 /* animationPet.json */; };
+		3DF8CE452B2AE4B6006C7172 /* PetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8CE442B2AE4B6006C7172 /* PetRowView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D056ACC2B0B42EE00BDD0F9 /* PetFinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D056ACF2B0B42EE00BDD0F9 /* PetFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFinderApp.swift; sourceTree = "<group>"; };
+		3D056AD12B0B42EE00BDD0F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D056AD32B0B42EF00BDD0F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D056AD62B0B42EF00BDD0F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D1120C72B171E2000C6F373 /* PetsLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsLocalService.swift; sourceTree = "<group>"; };
+		3D1120C92B171E7400C6F373 /* MockPetsLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPetsLocalService.swift; sourceTree = "<group>"; };
+		3D1120CB2B171F9900C6F373 /* UserDefaultsPetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsPetService.swift; sourceTree = "<group>"; };
+		3D1120CD2B1726BE00C6F373 /* PetsFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsFavoriteView.swift; sourceTree = "<group>"; };
+		3D1FBE692B0C8DD4007FE7C6 /* TokenRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRemoteService.swift; sourceTree = "<group>"; };
+		3D1FBE6B2B0C8E27007FE7C6 /* LiveTokenRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTokenRemoteService.swift; sourceTree = "<group>"; };
+		3D1FBE6E2B0C9E7A007FE7C6 /* TokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRepository.swift; sourceTree = "<group>"; };
+		3D2BECA32B10ABE3003B1A0D /* OrganizationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsViewModel.swift; sourceTree = "<group>"; };
+		3D2BECA72B10AC1F003B1A0D /* OrganizationsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsRemoteService.swift; sourceTree = "<group>"; };
+		3D2BECA92B10AC3D003B1A0D /* LiveOrganizationsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveOrganizationsRemoteService.swift; sourceTree = "<group>"; };
+		3D2BECAB2B10AC60003B1A0D /* MockOrganizationsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockOrganizationsRemoteService.swift; sourceTree = "<group>"; };
+		3D2BECAD2B10AC7D003B1A0D /* OrganizationsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsRepository.swift; sourceTree = "<group>"; };
+		3D2BECAF2B10B153003B1A0D /* OrganizationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsView.swift; sourceTree = "<group>"; };
+		3D2BECB12B10B2EA003B1A0D /* OrganizationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationDetailView.swift; sourceTree = "<group>"; };
+		3D7318032B0B459100A91ACC /* URLSessionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkClient.swift; sourceTree = "<group>"; };
+		3D7318052B0B459E00A91ACC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3D7318072B0B45B400A91ACC /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		3D73180A2B0B468900A91ACC /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		3D73180E2B0B4B9200A91ACC /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		3D7318102B0B4C5700A91ACC /* CommonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClass.swift; sourceTree = "<group>"; };
+		3D779A062B0B4F6700F6C4BB /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		3D779A0B2B0B50C000F6C4BB /* PetsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsRemoteService.swift; sourceTree = "<group>"; };
+		3D779A0D2B0B538C00F6C4BB /* MockPetsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPetsRemoteService.swift; sourceTree = "<group>"; };
+		3D968F1D2B0B6537004C7E6C /* LivePetsRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePetsRemoteService.swift; sourceTree = "<group>"; };
+		3D968F232B0B6672004C7E6C /* PetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewModel.swift; sourceTree = "<group>"; };
+		3D968F252B0B66B2004C7E6C /* PetsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsRepository.swift; sourceTree = "<group>"; };
+		3DA1BE262B478A1F00A11892 /* OrganizationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationRowView.swift; sourceTree = "<group>"; };
+		3DA811012B30AB6000080A42 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		3DC55A792B0DF67E00BAC437 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		3DE50B302B0CB1A5008CFF27 /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
+		3DE6D6B12B0B699600108275 /* PetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsView.swift; sourceTree = "<group>"; };
+		3DE6D6B32B0B6A4000108275 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3DE6D6B52B0B6D9D00108275 /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
+		3DE6D6BA2B0B7D6000108275 /* TokenLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenLocalService.swift; sourceTree = "<group>"; };
+		3DE6D6BC2B0B7D8F00108275 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		3DE6D6BF2B0B7FC000108275 /* UserDefaultsTokenLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTokenLocalService.swift; sourceTree = "<group>"; };
+		3DE91B8B2B30CA4F00C47D81 /* animationPet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animationPet.json; sourceTree = "<group>"; };
+		3DF8CE442B2AE4B6006C7172 /* PetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRowView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D056AC92B0B42EE00BDD0F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DDEB0C02B3F7B0400E52DC4 /* SimpleToast in Frameworks */,
+				3DE91B862B30C0AF00C47D81 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D056AC32B0B42EE00BDD0F9 = {
+			isa = PBXGroup;
+			children = (
+				3D056ACE2B0B42EE00BDD0F9 /* PetFinderApp */,
+				3D056ACD2B0B42EE00BDD0F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D056ACD2B0B42EE00BDD0F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D056ACC2B0B42EE00BDD0F9 /* PetFinderApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D056ACE2B0B42EE00BDD0F9 /* PetFinderApp */ = {
+			isa = PBXGroup;
+			children = (
+				3DA811002B30AB4E00080A42 /* Components */,
+				3DA810FD2B309FB000080A42 /* Animations */,
+				3D779A012B0B4EAE00F6C4BB /* Data */,
+				3D7318092B0B467600A91ACC /* Entities */,
+				3D779A022B0B4EB800F6C4BB /* NetworkClient */,
+				3D968F1F2B0B6617004C7E6C /* Features */,
+				3D056ACF2B0B42EE00BDD0F9 /* PetFinderApp.swift */,
+				3D056AD12B0B42EE00BDD0F9 /* ContentView.swift */,
+				3DE6D6B32B0B6A4000108275 /* Coordinator.swift */,
+				3D056AD32B0B42EF00BDD0F9 /* Assets.xcassets */,
+				3D056AD52B0B42EF00BDD0F9 /* Preview Content */,
+			);
+			path = PetFinderApp;
+			sourceTree = "<group>";
+		};
+		3D056AD52B0B42EF00BDD0F9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3D056AD62B0B42EF00BDD0F9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D1120C62B171D4D00C6F373 /* PetsFavoriteView */ = {
+			isa = PBXGroup;
+			children = (
+				3D1120CD2B1726BE00C6F373 /* PetsFavoriteView.swift */,
+			);
+			path = PetsFavoriteView;
+			sourceTree = "<group>";
+		};
+		3D1FBE682B0C8DBD007FE7C6 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				3D1FBE692B0C8DD4007FE7C6 /* TokenRemoteService.swift */,
+				3D1FBE6B2B0C8E27007FE7C6 /* LiveTokenRemoteService.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		3D1FBE6D2B0C9380007FE7C6 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				3DE6D6BA2B0B7D6000108275 /* TokenLocalService.swift */,
+				3DE6D6BF2B0B7FC000108275 /* UserDefaultsTokenLocalService.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		3D2BECA02B10AB72003B1A0D /* Organizations */ = {
+			isa = PBXGroup;
+			children = (
+				3D2BECA22B10AB8F003B1A0D /* OrganizationDetailView */,
+				3D2BECA12B10AB7D003B1A0D /* OrganizationsView */,
+			);
+			path = Organizations;
+			sourceTree = "<group>";
+		};
+		3D2BECA12B10AB7D003B1A0D /* OrganizationsView */ = {
+			isa = PBXGroup;
+			children = (
+				3D2BECA32B10ABE3003B1A0D /* OrganizationsViewModel.swift */,
+				3D2BECAF2B10B153003B1A0D /* OrganizationsView.swift */,
+				3DA1BE262B478A1F00A11892 /* OrganizationRowView.swift */,
+			);
+			path = OrganizationsView;
+			sourceTree = "<group>";
+		};
+		3D2BECA22B10AB8F003B1A0D /* OrganizationDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				3D2BECB12B10B2EA003B1A0D /* OrganizationDetailView.swift */,
+			);
+			path = OrganizationDetailView;
+			sourceTree = "<group>";
+		};
+		3D2BECA52B10ABED003B1A0D /* Organizations */ = {
+			isa = PBXGroup;
+			children = (
+				3D2BECA62B10AC07003B1A0D /* Remote */,
+			);
+			path = Organizations;
+			sourceTree = "<group>";
+		};
+		3D2BECA62B10AC07003B1A0D /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				3D2BECA72B10AC1F003B1A0D /* OrganizationsRemoteService.swift */,
+				3D2BECAB2B10AC60003B1A0D /* MockOrganizationsRemoteService.swift */,
+				3D2BECA92B10AC3D003B1A0D /* LiveOrganizationsRemoteService.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		3D7318092B0B467600A91ACC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3DE6D6BC2B0B7D8F00108275 /* Token.swift */,
+				3D73180A2B0B468900A91ACC /* Pet.swift */,
+				3D73180E2B0B4B9200A91ACC /* Organization.swift */,
+				3D7318102B0B4C5700A91ACC /* CommonClass.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3D779A012B0B4EAE00F6C4BB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3D779A032B0B4F0900F6C4BB /* Constants */,
+				3D779A042B0B4F1600F6C4BB /* Repository */,
+				3D779A052B0B4F1F00F6C4BB /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3D779A022B0B4EB800F6C4BB /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				3D7318032B0B459100A91ACC /* URLSessionNetworkClient.swift */,
+				3D7318052B0B459E00A91ACC /* NetworkError.swift */,
+				3D7318072B0B45B400A91ACC /* NetworkClient.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		3D779A032B0B4F0900F6C4BB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3D779A062B0B4F6700F6C4BB /* NetworkConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3D779A042B0B4F1600F6C4BB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3D1FBE6E2B0C9E7A007FE7C6 /* TokenRepository.swift */,
+				3D968F252B0B66B2004C7E6C /* PetsRepository.swift */,
+				3D2BECAD2B10AC7D003B1A0D /* OrganizationsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3D779A052B0B4F1F00F6C4BB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3DE6D6B92B0B7CFF00108275 /* Token */,
+				3D2BECA52B10ABED003B1A0D /* Organizations */,
+				3D779A082B0B509800F6C4BB /* Pets */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3D779A082B0B509800F6C4BB /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				3D779A0A2B0B50A700F6C4BB /* Local */,
+				3D779A092B0B50A000F6C4BB /* Remote */,
+			);
+			path = Pets;
+			sourceTree = "<group>";
+		};
+		3D779A092B0B50A000F6C4BB /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				3D779A0B2B0B50C000F6C4BB /* PetsRemoteService.swift */,
+				3D779A0D2B0B538C00F6C4BB /* MockPetsRemoteService.swift */,
+				3D968F1D2B0B6537004C7E6C /* LivePetsRemoteService.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		3D779A0A2B0B50A700F6C4BB /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				3D1120C72B171E2000C6F373 /* PetsLocalService.swift */,
+				3D1120C92B171E7400C6F373 /* MockPetsLocalService.swift */,
+				3D1120CB2B171F9900C6F373 /* UserDefaultsPetService.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		3D968F1F2B0B6617004C7E6C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3D2BECA02B10AB72003B1A0D /* Organizations */,
+				3DC55A7B2B0DFDF400BAC437 /* SplashScreen */,
+				3D968F202B0B6623004C7E6C /* Pets */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3D968F202B0B6623004C7E6C /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				3D1120C62B171D4D00C6F373 /* PetsFavoriteView */,
+				3D968F222B0B6640004C7E6C /* PetDetailView */,
+				3D968F212B0B6635004C7E6C /* PetsView */,
+			);
+			path = Pets;
+			sourceTree = "<group>";
+		};
+		3D968F212B0B6635004C7E6C /* PetsView */ = {
+			isa = PBXGroup;
+			children = (
+				3D968F232B0B6672004C7E6C /* PetsViewModel.swift */,
+				3DE6D6B12B0B699600108275 /* PetsView.swift */,
+				3DF8CE442B2AE4B6006C7172 /* PetRowView.swift */,
+			);
+			path = PetsView;
+			sourceTree = "<group>";
+		};
+		3D968F222B0B6640004C7E6C /* PetDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				3DE6D6B52B0B6D9D00108275 /* PetDetailView.swift */,
+			);
+			path = PetDetailView;
+			sourceTree = "<group>";
+		};
+		3DA810FD2B309FB000080A42 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				3DE91B8B2B30CA4F00C47D81 /* animationPet.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		3DA811002B30AB4E00080A42 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3DA811012B30AB6000080A42 /* LottieView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3DC55A7B2B0DFDF400BAC437 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3DC55A7C2B0E20C700BAC437 /* SplashScreenView */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		3DC55A7C2B0E20C700BAC437 /* SplashScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				3DE50B302B0CB1A5008CFF27 /* SplashScreenViewModel.swift */,
+				3DC55A792B0DF67E00BAC437 /* SplashScreenView.swift */,
+			);
+			path = SplashScreenView;
+			sourceTree = "<group>";
+		};
+		3DE6D6B92B0B7CFF00108275 /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				3D1FBE6D2B0C9380007FE7C6 /* Local */,
+				3D1FBE682B0C8DBD007FE7C6 /* Remote */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D056ACB2B0B42EE00BDD0F9 /* PetFinderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D056ADA2B0B42EF00BDD0F9 /* Build configuration list for PBXNativeTarget "PetFinderApp" */;
+			buildPhases = (
+				3D056AC82B0B42EE00BDD0F9 /* Sources */,
+				3D056AC92B0B42EE00BDD0F9 /* Frameworks */,
+				3D056ACA2B0B42EE00BDD0F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetFinderApp;
+			packageProductDependencies = (
+				3DE91B852B30C0AF00C47D81 /* Lottie */,
+				3DDEB0BF2B3F7B0400E52DC4 /* SimpleToast */,
+			);
+			productName = PetFinderApp;
+			productReference = 3D056ACC2B0B42EE00BDD0F9 /* PetFinderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D056AC42B0B42EE00BDD0F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3D056ACB2B0B42EE00BDD0F9 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 3D056AC72B0B42EE00BDD0F9 /* Build configuration list for PBXProject "PetFinderApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D056AC32B0B42EE00BDD0F9;
+			packageReferences = (
+				3DE91B842B30C0AF00C47D81 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				3DDEB0BE2B3F7B0400E52DC4 /* XCRemoteSwiftPackageReference "SimpleToast" */,
+			);
+			productRefGroup = 3D056ACD2B0B42EE00BDD0F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D056ACB2B0B42EE00BDD0F9 /* PetFinderApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D056ACA2B0B42EE00BDD0F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D056AD72B0B42EF00BDD0F9 /* Preview Assets.xcassets in Resources */,
+				3DE91B8C2B30CA4F00C47D81 /* animationPet.json in Resources */,
+				3D056AD42B0B42EF00BDD0F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D056AC82B0B42EE00BDD0F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE6D6B22B0B699600108275 /* PetsView.swift in Sources */,
+				3D2BECAE2B10AC7D003B1A0D /* OrganizationsRepository.swift in Sources */,
+				3DE6D6BB2B0B7D6000108275 /* TokenLocalService.swift in Sources */,
+				3D056AD22B0B42EE00BDD0F9 /* ContentView.swift in Sources */,
+				3D1FBE6F2B0C9E7A007FE7C6 /* TokenRepository.swift in Sources */,
+				3DE6D6B62B0B6D9D00108275 /* PetDetailView.swift in Sources */,
+				3D73180F2B0B4B9200A91ACC /* Organization.swift in Sources */,
+				3D1120CA2B171E7400C6F373 /* MockPetsLocalService.swift in Sources */,
+				3DE6D6C02B0B7FC000108275 /* UserDefaultsTokenLocalService.swift in Sources */,
+				3D968F262B0B66B2004C7E6C /* PetsRepository.swift in Sources */,
+				3D7318082B0B45B400A91ACC /* NetworkClient.swift in Sources */,
+				3D1120CC2B171F9900C6F373 /* UserDefaultsPetService.swift in Sources */,
+				3D779A0C2B0B50C000F6C4BB /* PetsRemoteService.swift in Sources */,
+				3D7318062B0B459E00A91ACC /* NetworkError.swift in Sources */,
+				3DF8CE452B2AE4B6006C7172 /* PetRowView.swift in Sources */,
+				3D2BECA42B10ABE3003B1A0D /* OrganizationsViewModel.swift in Sources */,
+				3D73180B2B0B468900A91ACC /* Pet.swift in Sources */,
+				3D2BECAA2B10AC3D003B1A0D /* LiveOrganizationsRemoteService.swift in Sources */,
+				3DE50B312B0CB1A5008CFF27 /* SplashScreenViewModel.swift in Sources */,
+				3D1FBE6C2B0C8E27007FE7C6 /* LiveTokenRemoteService.swift in Sources */,
+				3D2BECA82B10AC1F003B1A0D /* OrganizationsRemoteService.swift in Sources */,
+				3D1120C82B171E2000C6F373 /* PetsLocalService.swift in Sources */,
+				3D2BECAC2B10AC60003B1A0D /* MockOrganizationsRemoteService.swift in Sources */,
+				3D7318042B0B459100A91ACC /* URLSessionNetworkClient.swift in Sources */,
+				3DA1BE272B478A1F00A11892 /* OrganizationRowView.swift in Sources */,
+				3D2BECB02B10B153003B1A0D /* OrganizationsView.swift in Sources */,
+				3DA811022B30AB6000080A42 /* LottieView.swift in Sources */,
+				3DE6D6B42B0B6A4000108275 /* Coordinator.swift in Sources */,
+				3D968F242B0B6672004C7E6C /* PetsViewModel.swift in Sources */,
+				3DE6D6BD2B0B7D8F00108275 /* Token.swift in Sources */,
+				3D2BECB22B10B2EA003B1A0D /* OrganizationDetailView.swift in Sources */,
+				3DC55A7A2B0DF67E00BAC437 /* SplashScreenView.swift in Sources */,
+				3D056AD02B0B42EE00BDD0F9 /* PetFinderApp.swift in Sources */,
+				3D1FBE6A2B0C8DD4007FE7C6 /* TokenRemoteService.swift in Sources */,
+				3D779A0E2B0B538C00F6C4BB /* MockPetsRemoteService.swift in Sources */,
+				3D1120CE2B1726BE00C6F373 /* PetsFavoriteView.swift in Sources */,
+				3D968F1E2B0B6537004C7E6C /* LivePetsRemoteService.swift in Sources */,
+				3D779A072B0B4F6700F6C4BB /* NetworkConstants.swift in Sources */,
+				3D7318112B0B4C5700A91ACC /* CommonClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D056AD82B0B42EF00BDD0F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D056AD92B0B42EF00BDD0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D056ADB2B0B42EF00BDD0F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PetFinderApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PetFinderApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nati.PetFinderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D056ADC2B0B42EF00BDD0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PetFinderApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PetFinderApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nati.PetFinderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D056AC72B0B42EE00BDD0F9 /* Build configuration list for PBXProject "PetFinderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D056AD82B0B42EF00BDD0F9 /* Debug */,
+				3D056AD92B0B42EF00BDD0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D056ADA2B0B42EF00BDD0F9 /* Build configuration list for PBXNativeTarget "PetFinderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D056ADB2B0B42EF00BDD0F9 /* Debug */,
+				3D056ADC2B0B42EF00BDD0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DDEB0BE2B3F7B0400E52DC4 /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+		3DE91B842B30C0AF00C47D81 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DDEB0BF2B3F7B0400E52DC4 /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DDEB0BE2B3F7B0400E52DC4 /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+		3DE91B852B30C0AF00C47D81 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DE91B842B30C0AF00C47D81 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3D056AC42B0B42EE00BDD0F9 /* Project object */;
+}
