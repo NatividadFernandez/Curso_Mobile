@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_background">#ebe2f5</color>
+    <color name="purple">#971df9</color>
+    <color name="dark_purple">#390465</color>
+    <color name="dark_purple_2">#721fbc</color>
+    <color name="android_purple">#7E57C2</color>
+    <color name="light_purple">#ecd7fd</color>
+    <color name="mega_light_purple">#e8d1fa</color>
+    <color name="off_white">#E3E3E1</color>
+    <color name="light_gray">#c9c9c9</color>
+    <color name="mega_light_gray">#9F9D9D</color>
+    <color name="light_purple_2">#b6a9c1</color>
+    <color name="light_purple_3">#faf5fe</color>
+    <color name="light_purple_4">#7b5f92</color>
+    <color name="pink">#f26fa7</color>
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "540535074181",
+    "project_id": "petadoptapp-2b214",
+    "storage_bucket": "petadoptapp-2b214.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540535074181:android:8ee1053a537e6dfa7568ec",
+        "android_client_info": {
+          "package_name": "com.nati.petadoptapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2PpDoyt9giXxd-FBkgGf0r_kZywcPdcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

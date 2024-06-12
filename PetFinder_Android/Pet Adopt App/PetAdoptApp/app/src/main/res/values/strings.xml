@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Pet Adopt App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Alert Dialog -->
+    <string name="title_dialog">Eliminar de favoritos</string>
+    <string name="message_dialog">¿Seguro que quieres eliminar a este animal de favoritos?</string>
+    <string name="btn_acept_dialog">Aceptar</string>
+    <string name="btn_cancel_dialog">Cancelar</string>
+
+    <string name="title_user_dialog">Eliminar Usuario</string>
+    <string name="message_user_dialog">¿Seguro que quieres eliminar tu usuario?</string>
+    <string name="btn_acept_user_dialog">Aceptar</string>
+    <string name="btn_cancel_user_dialog">Cancelar</string>
+
+    <string name="title_dialog_select_pet_type">Tipo de animal</string>
+    <string name="message_dialog_select_pet_type">Selecciona el tipo de animal</string>
+    <string name="btn_reset_dialog">Reestablecer</string>
+    <string name="rb_title_dog">Perros</string>
+    <string name="rb_title_rabbit">Conejos</string>
+    <string name="rb_title_cat">Gatos</string>
+    <string name="rb_title_bird">Pájaros</string>
+
+    <!-- Form Messages -->
+    <string name="required">Requerido</string>
+    <string name="email_required">"Introduzca una dirección de correo electrónico válida"</string>
+    <string name="password_long_required">"La contraseña debe tener al menos 6 caracteres"</string>
+    <string name="password_long_required_refresh">"Recuerda que la contraseña debía ser de al menos 6 caracteres"</string>
+
+    <!-- Message -->
+    <string name="create_user">Usuario creado correctamente</string>
+
+    <!-- Pet Detail -->
+    <string name="pet_detail_title_age">Edad</string>
+    <string name="pet_detail_title_size">Tamaño</string>
+    <string name="pet_detail_title_gender">Género</string>
+    <string name="pet_detail_title_description">Descripción</string>
+    <string name="pet_detail_btn_adopt">Adoptame</string>
+
+    <!-- BottomNavigationView -->
+    <string name="item_home_bottomNav">Inicio</string>
+    <string name="item_organizations_bottomNav">Organizaciones</string>
+    <string name="item_profile_bottomNav">Perfil</string>
+
+    <!-- Menu -->
+    <string name="menu_profile_close_session">Cerrar Sesión</string>
+    <string name="menu_profile_delete_user">Eliminar Usuario</string>
+
+
+    <!-- Sign Up - Sign In -->
+    <string name="sign_up_btn">Registrarse</string>
+    <string name="sign_up_text_name">Nombre</string>
+    <string name="sign_up_text_surnames">Apellidos</string>
+    <string name="text_email">Correo Electrónico</string>
+    <string name="text_password">Contraseña</string>
+    <string name="sign_in_btn_sign_up">Registrarme</string>
+    <string name="sign_in_btn">Iniciar Sesión</string>
+    <string name="sign_in_slogan_description">Encuentra Tu Compañero Peludo</string>
+    <string name="sign_in_title">Adopta Amor</string>
+
+    <!-- Pet List -->
+    <string name="pet_list_search">Nombre, edad...</string>
+
+    <!-- Profile -->
+    <string name="profile_text_adopt">Posibles adopciones</string>
+
+    <!-- Organization Detail -->
+    <string name="tv_organization_detail_label_wed">X</string>
+    <string name="tv_organization_detail_label_tues">M</string>
+    <string name="tv_organization_detail_label_mond">L</string>
+    <string name="tv_organization_detail_label_thurs">J</string>
+    <string name="tv_organization_detail_label_frid">V</string>
+    <string name="tv_organization_detail_label_satur">S</string>
+    <string name="tv_organization_detail_label_sund">D</string>
+    <string name="organization_detail_title_description">Cometido</string>
+
+
+</resources>

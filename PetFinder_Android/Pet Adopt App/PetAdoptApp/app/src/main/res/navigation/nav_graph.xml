@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/petListFragment"
+        android:name="com.nati.petadoptapp.presentation.pet.fragment.PetListFragment"
+        tools:layout="@layout/fragment_pet_list">
+        <action
+            android:id="@+id/action_petListFragment_to_petDetailFragment"
+            app:destination="@id/petDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/petDetailFragment"
+        android:name="com.nati.petadoptapp.presentation.pet.fragment.PetDetailFragment"
+        tools:layout="@layout/fragment_pet_detail">
+
+        <argument
+            android:name="petId"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_petDetailFragment_to_organizationDetailFragment"
+            app:destination="@id/organizationDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/organizationListFragment"
+        android:name="com.nati.petadoptapp.presentation.organization.fragment.OrganizationListFragment"
+        tools:layout="@layout/fragment_organization_list">
+        <action
+            android:id="@+id/action_organizationListFragment_to_organizationDetailFragment"
+            app:destination="@id/organizationDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/organizationDetailFragment"
+        android:name="com.nati.petadoptapp.presentation.organization.fragment.OrganizationDetailFragment"
+        tools:layout="@layout/fragment_organization_detail">
+
+        <argument
+            android:name="organizationId"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.nati.petadoptapp.presentation.user.fragment.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_petListFragment"
+            app:destination="@id/petListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.nati.petadoptapp.presentation.user.fragment.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_in_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.nati.petadoptapp.presentation.user.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_petDetailFragment"
+            app:destination="@id/petDetailFragment" />
+    </fragment>
+
+
+</navigation>
